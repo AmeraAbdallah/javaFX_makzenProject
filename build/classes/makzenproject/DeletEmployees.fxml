@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="737.0" prefWidth="1116.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makzenproject.DeletEmployeesController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <ComboBox fx:id="id" layoutX="268.0" layoutY="147.0" onAction="#pickId" prefWidth="150.0" />
+      <Label layoutX="147.0" layoutY="150.0" text="Select ID" />
+      <Label alignment="CENTER_RIGHT" layoutX="597.0" layoutY="518.0" prefWidth="108.0" text="Email" />
+      <Label alignment="CENTER_RIGHT" layoutX="597.0" layoutY="462.0" prefWidth="108.0" text="Phone Number" />
+      <Label alignment="CENTER_RIGHT" layoutX="595.0" layoutY="412.0" prefWidth="108.0" text="Nationality" />
+      <Label alignment="CENTER_RIGHT" layoutX="595.0" layoutY="360.0" prefWidth="108.0" text="Salary" />
+      <Label alignment="CENTER_RIGHT" layoutX="595.0" layoutY="312.0" prefWidth="108.0" text="Department" />
+      <Label alignment="CENTER_RIGHT" layoutX="110.0" layoutY="516.0" prefWidth="108.0" text="Date Of Birth" />
+      <Label alignment="CENTER_RIGHT" layoutX="108.0" layoutY="460.0" prefWidth="108.0" text="Address" />
+      <Label alignment="CENTER_RIGHT" layoutX="108.0" layoutY="410.0" prefWidth="108.0" text="Gender" />
+      <Label alignment="CENTER_RIGHT" layoutX="108.0" layoutY="360.0" prefWidth="108.0" text="Last Name" />
+      <Label alignment="CENTER_RIGHT" layoutX="108.0" layoutY="312.0" prefWidth="108.0" text="First Name" />
+      <Label layoutX="285.0" layoutY="41.0" text="to update an Employee Info Select A ID from comboBox then update Info" />
+      <Label fx:id="firstname" layoutX="268.0" layoutY="314.0" />
+      <Label fx:id="lastname" layoutX="268.0" layoutY="362.0" />
+      <Label fx:id="gender" layoutX="270.0" layoutY="412.0" />
+      <Label fx:id="address" layoutX="268.0" layoutY="464.0" />
+      <Label fx:id="birthDate" layoutX="268.0" layoutY="518.0" />
+      <Label fx:id="department" layoutX="752.0" layoutY="314.0" />
+      <Label fx:id="salary" layoutX="752.0" layoutY="362.0" />
+      <Label fx:id="nationalty" layoutX="754.0" layoutY="412.0" />
+      <Label fx:id="phoneNumber" layoutX="754.0" layoutY="466.0" />
+      <Label fx:id="email" layoutX="756.0" layoutY="520.0" />
+      <Button layoutX="343.0" layoutY="592.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="39.0" prefWidth="108.0" styleClass="options" text="Delete" />
+   </children>
+</AnchorPane>

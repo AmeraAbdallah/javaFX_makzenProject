@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="672.0" prefWidth="984.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="makzenproject.AddItemsController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="317.0" layoutY="466.0" mnemonicParsing="false" onAction="#addHandler" prefHeight="39.0" prefWidth="77.0" styleClass="options" text="Add" AnchorPane.topAnchor="466.0" />
+      <Label layoutX="67.0" layoutY="139.0" prefWidth="144.0" text="Name" />
+      <Label layoutX="67.0" layoutY="186.0" prefWidth="144.0" text="Type" />
+      <Label layoutX="66.0" layoutY="238.0" prefWidth="144.0" text="Class" />
+      <Label layoutX="65.0" layoutY="287.0" prefWidth="144.0" text="Cade" />
+      <Label layoutX="67.0" layoutY="336.0" prefWidth="144.0" text="Supply Date" />
+      <Label layoutX="494.0" layoutY="139.0" prefWidth="144.0" text="Quantity" />
+      <Label layoutX="494.0" layoutY="186.0" prefWidth="144.0" text="Price" />
+      <Label layoutX="494.0" layoutY="238.0" prefWidth="144.0" text="Supply Organization" />
+      <Label layoutX="494.0" layoutY="287.0" prefWidth="144.0" text="Expire Date" />
+      <TextField fx:id="name" layoutX="223.0" layoutY="136.0" />
+      <TextField fx:id="type" layoutX="223.0" layoutY="183.0" />
+      <TextField fx:id="code" layoutX="223.0" layoutY="284.0" />
+      <ComboBox fx:id="class_" layoutX="223.0" layoutY="235.0" prefHeight="31.0" prefWidth="187.0" />
+      <TextField fx:id="quantity" layoutX="676.0" layoutY="136.0" />
+      <TextField fx:id="price" layoutX="676.0" layoutY="183.0" />
+      <TextField fx:id="supplyOrganization" layoutX="676.0" layoutY="235.0" />
+      <DatePicker fx:id="expireDate" layoutX="676.0" layoutY="284.0" prefHeight="31.0" prefWidth="187.0" />
+      <Button layoutX="432.0" layoutY="466.0" mnemonicParsing="false" onAction="#resetHandler" prefHeight="39.0" prefWidth="77.0" styleClass="options" text="Reset" />
+      <DatePicker fx:id="supplyDate" layoutX="223.0" layoutY="333.0" prefHeight="31.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>

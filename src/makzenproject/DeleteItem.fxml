@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1053.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makzenproject.DeleteItemController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="130.0" layoutY="102.0" text="ID" />
+      <ComboBox fx:id="id" layoutX="171.0" layoutY="99.0" onAction="#pickId" prefHeight="31.0" prefWidth="157.0" />
+      <Label layoutX="130.0" layoutY="222.0" prefWidth="144.0" text="Name" />
+      <Label layoutX="130.0" layoutY="269.0" prefWidth="144.0" text="Type" />
+      <Label layoutX="129.0" layoutY="321.0" prefWidth="144.0" text="Class" />
+      <Label layoutX="128.0" layoutY="370.0" prefWidth="144.0" text="Cade" />
+      <Label layoutX="130.0" layoutY="419.0" prefWidth="144.0" text="Supply Date" />
+      <Label layoutX="557.0" layoutY="222.0" prefWidth="144.0" text="Quantity" />
+      <Label layoutX="557.0" layoutY="269.0" prefWidth="144.0" text="Price" />
+      <Label layoutX="557.0" layoutY="321.0" prefWidth="144.0" text="Supply Organization" />
+      <Label layoutX="557.0" layoutY="370.0" prefWidth="144.0" text="Expire Date" />
+      <Button layoutX="392.0" layoutY="522.0" mnemonicParsing="false" onAction="#deletItem" prefHeight="39.0" prefWidth="157.0" styleClass="options" text="Delete" />
+      <Label fx:id="name" layoutX="257.0" layoutY="224.0" />
+      <Label fx:id="type" layoutX="259.0" layoutY="271.0" />
+      <Label fx:id="class_" layoutX="261.0" layoutY="323.0" />
+      <Label fx:id="code" layoutX="263.0" layoutY="372.0" />
+      <Label fx:id="supplyDate" layoutX="265.0" layoutY="421.0" />
+      <Label fx:id="quantity" layoutX="749.0" layoutY="224.0" />
+      <Label fx:id="price" layoutX="751.0" layoutY="273.0" />
+      <Label fx:id="supplyOrganization" layoutX="753.0" layoutY="325.0" />
+      <Label fx:id="expireDate" layoutX="755.0" layoutY="374.0" />
+   </children>
+</AnchorPane>

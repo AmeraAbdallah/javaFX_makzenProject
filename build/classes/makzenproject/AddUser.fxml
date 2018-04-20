@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="908.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="makzenproject.AddUserController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="98.0" layoutY="196.0" text="Name" />
+      <Label layoutX="98.0" layoutY="242.0" text="Password" />
+      <Label layoutX="98.0" layoutY="287.0" text="Access" />
+      <TextField fx:id="name" layoutX="200.0" layoutY="194.0" />
+      <TextField fx:id="nationality" layoutX="586.0" layoutY="195.0" />
+      <ComboBox fx:id="access" layoutX="200.0" layoutY="285.0" prefHeight="31.0" prefWidth="187.0" promptText="Select Access" />
+      <Label layoutX="449.0" layoutY="199.0" text="Nationality" />
+      <Label layoutX="451.0" layoutY="245.0" text="Email" />
+      <Label layoutX="451.0" layoutY="288.0" text="Phone Number" />
+      <TextField fx:id="email" layoutX="586.0" layoutY="243.0" />
+      <TextField fx:id="phoneNumber" layoutX="586.0" layoutY="286.0" />
+      <PasswordField fx:id="password" layoutX="200.0" layoutY="240.0" />
+      <Button layoutX="313.0" layoutY="385.0" mnemonicParsing="false" onAction="#addHandler" prefHeight="39.0" prefWidth="77.0" styleClass="options" text="Add" />
+      <Button layoutX="421.0" layoutY="385.0" mnemonicParsing="false" onAction="#resetHandler" prefHeight="39.0" prefWidth="87.0" styleClass="options" text="Reset" />
+   </children>
+</AnchorPane>

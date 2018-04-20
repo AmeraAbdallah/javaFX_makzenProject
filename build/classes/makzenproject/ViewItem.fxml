@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="524.0" prefWidth="1116.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="makzenproject.ViewItemController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="itemTable" layoutX="29.0" layoutY="85.0" prefHeight="316.0" prefWidth="1042.0">
+        <columns>
+          <TableColumn fx:id="id" text="ID" />
+          <TableColumn fx:id="name" prefWidth="93.0" text="Name" />
+            <TableColumn fx:id="type" prefWidth="102.0" text="Type" />
+            <TableColumn fx:id="class_" prefWidth="110.0" text="Class" />
+            <TableColumn fx:id="code" prefWidth="105.0" text="Code" />
+            <TableColumn fx:id="supplyDate" prefWidth="103.0" text="Supply Date" />
+            <TableColumn fx:id="quantity" prefWidth="79.0" text="Quantity" />
+            <TableColumn fx:id="price" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="supplyOrg" prefWidth="172.0" text="Supply Organization" />
+            <TableColumn fx:id="ExpireDate" prefWidth="122.0" text="Expire Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

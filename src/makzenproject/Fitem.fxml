@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="811.0" prefWidth="1279.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makzenproject.FitemController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="859.0" prefWidth="1279.0">
+         <left>
+            <Pane prefHeight="768.0" prefWidth="215.0">
+               <children>
+                  <VBox layoutX="3.0" layoutY="119.0" prefHeight="556.0" prefWidth="212.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#viewItems" prefHeight="50.0" prefWidth="212.0" styleClass="options" text="View Items" />
+                        <Button mnemonicParsing="false" onAction="#addItem" prefHeight="50.0" prefWidth="212.0" styleClass="options" text="Add Item" />
+                        <Button mnemonicParsing="false" onAction="#updateItem" prefHeight="50.0" prefWidth="212.0" styleClass="options" text="Update Item info" />
+                        <Button mnemonicParsing="false" onAction="#deleteItem" prefHeight="50.0" prefWidth="212.0" styleClass="options" text="Delete Item" />
+                        <Button mnemonicParsing="false" onAction="#archive" prefHeight="50.0" prefWidth="212.0" styleClass="options" text="Archive" />
+                        <Button mnemonicParsing="false" onAction="#searchHndler" prefHeight="54.0" prefWidth="215.0" styleClass="options" text="Search" />
+                     </children>
+                  </VBox>
+                  <Separator layoutX="212.0" layoutY="-61.0" orientation="VERTICAL" prefHeight="865.0" prefWidth="4.0" />
+               </children>
+            </Pane>
+         </left>
+         <top>
+            <HBox alignment="TOP_CENTER" prefHeight="58.0" prefWidth="1559.0" spacing="2.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleProfile" prefWidth="120.0" text="Profile" />
+                  <Button mnemonicParsing="false" onAction="#handleEmp" prefWidth="120.0" text="Employees" />
+                  <Button fx:id="bClckd" maxWidth="100.0" mnemonicParsing="false" onAction="#handleItems" prefWidth="120.0" styleClass="clicked" text="Items" />
+                  <Button fx:id="userButton" mnemonicParsing="false" onAction="#handleUsers" prefWidth="120.0" text="Users" />
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

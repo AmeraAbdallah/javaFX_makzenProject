@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="826.0" prefWidth="1111.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makzenproject.SearchItemController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="itemTable" layoutX="25.0" layoutY="84.0" prefHeight="316.0" prefWidth="1061.0">
+        <columns>
+          <TableColumn fx:id="id" text="ID" />
+          <TableColumn fx:id="name" prefWidth="93.0" text="Name" />
+            <TableColumn fx:id="type" prefWidth="102.0" text="Type" />
+            <TableColumn fx:id="class_" prefWidth="110.0" text="Class" />
+            <TableColumn fx:id="code" prefWidth="105.0" text="Code" />
+            <TableColumn fx:id="supplyDate" prefWidth="103.0" text="Supply Date" />
+            <TableColumn fx:id="quantity" prefWidth="79.0" text="Quantity" />
+            <TableColumn fx:id="price" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="supplyOrg" prefWidth="190.0" text="Supply Organization" />
+            <TableColumn fx:id="ExpireDate" prefWidth="128.0" text="Expire Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchText" layoutX="717.0" layoutY="451.0" prefHeight="46.0" prefWidth="224.0" promptText="Enter Searching Key" />
+      <VBox layoutX="717.0" layoutY="497.0" prefHeight="329.0" prefWidth="224.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#idSearch" prefHeight="39.0" prefWidth="233.0" styleClass="options" text="Search using ID" />
+            <Button mnemonicParsing="false" onAction="#handleSearch" prefHeight="39.0" prefWidth="233.0" styleClass="options" text="Search using name" />
+            <Button mnemonicParsing="false" onAction="#typeSearch" prefHeight="39.0" prefWidth="227.0" styleClass="options" text="Search using type" />
+            <Button mnemonicParsing="false" onAction="#classSearch" prefHeight="39.0" prefWidth="226.0" styleClass="options" text="Search using class" />
+            <Button mnemonicParsing="false" onAction="#codeSearch" prefHeight="39.0" prefWidth="228.0" styleClass="options" text="Search using code" />
+            <Button mnemonicParsing="false" onAction="#quantitySearch" prefHeight="39.0" prefWidth="237.0" styleClass="options" text="Search using quantity" />
+            <Button mnemonicParsing="false" onAction="#priceSearch" prefHeight="39.0" prefWidth="233.0" styleClass="options" text="Search using price" />
+            <Button mnemonicParsing="false" onAction="#supplyOrgSearch" prefHeight="39.0" prefWidth="224.0" styleClass="options" text="Search using suppty org" />
+         </children>
+      </VBox>
+      <DatePicker fx:id="dateP" layoutX="453.0" layoutY="457.0" prefHeight="39.0" prefWidth="233.0" />
+      <VBox layoutX="453.0" layoutY="496.0" prefHeight="70.0" prefWidth="233.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#supplyDateSearch" prefHeight="39.0" prefWidth="233.0" styleClass="options" text="Search using supply date" />
+            <Button mnemonicParsing="false" onAction="#expireDateSearch" prefHeight="39.0" prefWidth="233.0" styleClass="options" text="Search using expire date" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="861.0" prefWidth="1089.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makzenproject.FmainController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="861.0" prefWidth="1022.0">
+         <center>
+            <Pane prefHeight="610.0" prefWidth="624.0">
+               <children>
+                  <ImageView fitHeight="182.0" fitWidth="150.0" layoutX="297.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/profile-placeholder.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="236.0" layoutY="348.0" prefHeight="238.0" prefWidth="318.0" spacing="30.0">
+                     <children>
+                        <VBox prefHeight="238.0" prefWidth="140.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefWidth="140.0" text="Id" />
+                              <Label alignment="CENTER_RIGHT" prefWidth="140.0" text="Name" />
+                              <Label alignment="CENTER_RIGHT" prefWidth="140.0" text="National Number" />
+                              <Label alignment="CENTER_RIGHT" prefWidth="140.0" text="Email" />
+                              <Label alignment="CENTER_RIGHT" prefWidth="140.0" text="Phone Number" />
+                              <Label alignment="CENTER_RIGHT" prefWidth="140.0" text="Access" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="238.0" prefWidth="179.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lableId" text="Label" />
+                              <Label fx:id="lableName" text="Label" />
+                              <Label fx:id="labelNM" text="Label" />
+                              <Label fx:id="labelEmail" text="Label" />
+                              <Label fx:id="labelPN" text="Label" />
+                              <Label fx:id="labelAccess" text="Label" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Button layoutX="332.0" layoutY="586.0" mnemonicParsing="false" onAction="#hadleLogout" prefHeight="39.0" prefWidth="96.0" styleClass="options" text="Logout" />
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <HBox alignment="TOP_CENTER" prefHeight="59.0" prefWidth="1022.0" spacing="2.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="bClckd" mnemonicParsing="false" onAction="#handleProfile" prefWidth="120.0" styleClass="clicked" text="Profile" />
+                  <Button mnemonicParsing="false" onAction="#handleEmp" prefWidth="120.0" text="Employees" />
+                  <Button maxWidth="100.0" mnemonicParsing="false" onAction="#handleItems" prefWidth="120.0" text="Items" />
+                  <Button fx:id="userButton" mnemonicParsing="false" onAction="#handleUsers" prefWidth="120.0" text="Users" />
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <Pane prefHeight="802.0" prefWidth="151.0" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <Pane prefHeight="774.0" prefWidth="111.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="804.0" prefWidth="1247.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makzenproject.FuserController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="804.0" prefWidth="1247.0">
+         <top>
+            <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="1247.0" spacing="2.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleProfile" prefWidth="120.0" text="Profile" />
+                  <Button mnemonicParsing="false" onAction="#handleEmp" prefWidth="120.0" text="Employees" />
+                  <Button maxWidth="100.0" mnemonicParsing="false" onAction="#handleItems" prefWidth="120.0" text="Items" />
+                  <Button fx:id="bClckd" mnemonicParsing="false" onAction="#handleUsers" prefWidth="120.0" styleClass="clicked" text="Users" />
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <Pane prefHeight="777.0" prefWidth="215.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Separator layoutX="212.0" layoutY="-50.0" orientation="VERTICAL" prefHeight="804.0" prefWidth="1.0" />
+                  <VBox layoutY="133.0" prefHeight="345.0" prefWidth="212.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#viewUserHandler" prefHeight="50.0" prefWidth="212.0" styleClass="options" text="View Users" />
+                        <Button mnemonicParsing="false" onAction="#addUser" prefHeight="50.0" prefWidth="212.0" styleClass="options" text="Add User" />
+                        <Button mnemonicParsing="false" onAction="#removeUser" prefHeight="50.0" prefWidth="212.0" styleClass="options" text="Delete User" />
+                        <Button mnemonicParsing="false" onAction="#handleUpdate" prefHeight="50.0" prefWidth="212.0" styleClass="options" text="Update User" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

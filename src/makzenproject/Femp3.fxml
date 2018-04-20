@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="862.0" prefWidth="1400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makzenproject.FempController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="878.0" prefWidth="1549.0">
+         <top>
+            <HBox alignment="TOP_CENTER" prefHeight="75.0" prefWidth="1058.0" spacing="2.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleProfile" prefWidth="120.0" text="Profile" />
+                  <Button fx:id="bClckd" mnemonicParsing="false" onAction="#handleEmp" prefWidth="120.0" styleClass="clicked" text="Employees" />
+                  <Button maxWidth="100.0" mnemonicParsing="false" onAction="#handleItems" prefWidth="120.0" text="Items" />
+                  <Button fx:id="userButton" mnemonicParsing="false" onAction="#handleUsers" prefWidth="120.0" text="Users" />
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <Pane prefHeight="768.0" prefWidth="215.0">
+               <children>
+                  <VBox layoutX="3.0" layoutY="119.0" prefHeight="556.0" prefWidth="212.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#viewEmployees" prefHeight="50.0" prefWidth="220.0" styleClass="options" text="View Employees" />
+                        <Button mnemonicParsing="false" onAction="#addEmployees" prefHeight="50.0" prefWidth="235.0" styleClass="options" text="Add Employee" />
+                        <Button mnemonicParsing="false" onAction="#deleteEmployees" prefHeight="50.0" prefWidth="227.0" styleClass="options" text="Delet Employee" />
+                        <Button mnemonicParsing="false" onAction="#updateEmployees" prefHeight="50.0" prefWidth="221.0" styleClass="options" text="Update Employee info" />
+                     </children>
+                  </VBox>
+                  <Separator layoutX="212.0" layoutY="-81.0" orientation="VERTICAL" prefHeight="885.0" prefWidth="6.0" />
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

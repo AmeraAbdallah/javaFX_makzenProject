@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="1249.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makzenproject.ViewEmployeesController">
+    <stylesheets>
+        <URL value="@newCascadeStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="44.0" prefHeight="411.0" prefWidth="1192.0">
+        <columns>
+          <TableColumn fx:id="idClmn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="fNClmn" prefWidth="106.0" text="First Name" />
+            <TableColumn fx:id="lNClmn" prefWidth="98.0" text="Last Name" />
+            <TableColumn fx:id="gClmn" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="aClmn" prefWidth="99.0" text="Address" />
+            <TableColumn fx:id="dOBClmn" prefWidth="119.0" text="Date Of Birth" />
+            <TableColumn fx:id="dClmn" prefWidth="153.0" text="Deprtment" />
+            <TableColumn fx:id="sClmn" prefWidth="89.0" text="Salary" />
+            <TableColumn fx:id="nClmn" prefWidth="95.0" text="Nationality" />
+            <TableColumn fx:id="eClmn" prefWidth="159.0" text="Email" />
+            <TableColumn fx:id="pNClmn" prefWidth="123.0" text="Phone Number" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

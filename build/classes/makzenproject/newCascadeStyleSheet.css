@@ -1,0 +1,88 @@
+.mainFxmlClass {
+    -fx-background-color : #F8F8F8 ;
+}
+
+.root{
+    -fx-background-color : #F8F8F8 ;
+
+}
+
+.labelOne{
+    -fx-font-size : 16px ;
+    -fx-text-fill : #999999 ;
+}
+.label{
+    -fx-font-size : 16px ;
+    -fx-text-fill : #999999 ;
+}
+.vboxOne{
+    -fx-border-width : 0.5px;
+    -fx-border-color : #e5e5e5;
+}
+
+.button{
+    -fx-background-color : #47A447;
+    -fx-text-fill : #fff;
+    -fx-padding: 5 5 5 5;
+    -fx-font-size: 18px;
+    -fx-border-color: transparent;
+    -fx-width : 150;
+    
+} 
+.button:hover{
+    -fx-background-color : #F8F8F8;
+    -fx-text-fill : #47A447;
+    -fx-font-size: 18px;
+    -fx-font-weight:bold;
+}
+
+.clicked{
+    -fx-background-color : #740000;
+    -fx-text-fill : #fff;
+}
+.options{
+    -fx-background-color : #7d7877;
+    -fx-text-fill : #fff;
+    -fx-font-size: 18px;
+    -fx-border-color: #fff #fff transparent #fff;
+    
+}
+.options:hover{
+    -fx-background-color : #F8F8F8;
+    -fx-text-fill : #7d7877;
+    -fx-font-size: 18px;
+    -fx-font-weight:bold;
+}
+.textFieldOne{
+    -fx-text-fill : #000;
+    -fx-background-color : transparent ;
+    -fx-border-color : #999999 ;
+    -fx-border-width : 0.5px ;
+    -fx-padding: 5 5 5 5;
+
+}
+.red{
+    -fx-background-color: #d80000 ;
+}
+.darkRed{
+    -fx-background-color: #740000;
+}
+.bold{
+    -fx-font-weight : bold ;
+}
+.menuItem{
+    -fx-text-fill: #000;
+}
+.babyBlue{
+    background-color: #00938e ;
+}
+.search{
+/*    -fx-background-color: #F8F8F8;
+   -fx-background-image: url(images/ss.png);
+   -fx-background-repeat: no-repeat;
+   -fx-background-size:cover;
+   -fx-background-position: center;
+   -fx-border-radius: 50%;
+   -fx-background-radius: 50%;*/
+   
+}

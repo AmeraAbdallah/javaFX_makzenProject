@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="542.0" prefWidth="604.0" stylesheets="@newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makzenproject.FXMLDocumentController">
+    <children>
+      <BorderPane prefHeight="542.0" prefWidth="606.0">
+         <bottom>
+            <Pane prefHeight="193.0" prefWidth="0.0">
+               <children>
+                    <Button fx:id="button" layoutX="249.0" layoutY="30.0" onAction="#handleButtonAction" styleClass="options" text="LOGIN" BorderPane.alignment="CENTER" />
+                  <Button layoutX="338.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="39.0" prefWidth="69.0" styleClass="options" text="EXIT" />
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <VBox prefHeight="413.0" prefWidth="322.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="37.0">
+                     <children>
+                        <Label prefWidth="67.0" text="ID" />
+                        <TextField fx:id="textField" prefHeight="35.0" prefWidth="225.0" promptText="Enter ID" styleClass="textFieldOne" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="37.0">
+                     <children>
+                        <Label text="Password" />
+                        <PasswordField fx:id="passwordField" prefHeight="35.0" prefWidth="225.0" promptText="Enter Password" styleClass="textFieldOne" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <Pane prefHeight="122.0" prefWidth="511.0" BorderPane.alignment="CENTER" />
+         </top>
+         <right>
+            <Pane prefHeight="227.0" prefWidth="119.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+    </children>
+</AnchorPane>
